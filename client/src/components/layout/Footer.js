@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container text-white ">
         <div className="row">
           <div className="col-md-4 mb-3 mb-md-0">
-            <h5>Auction Platform</h5>
+            <h5>BidBridge Auction Platform</h5>
             <p className=" ">
               A platform for buying and selling items through online auctions.
             </p>
@@ -31,9 +31,9 @@ const Footer = () => {
           <div className="col-md-4">
             <h5>Contact</h5>
             <ul className="list-unstyled ">
-              <li>Email: support@auction-platform.com</li>
-              <li>Phone: +1 (123) 456-7890</li>
-              <li>Address: 123 Auction St, City, Country</li>
+              <li>Email: ajinkyachirde@gmail.com</li>
+              <li>Phone: +91 7666453803</li>
+              <li>Address: Yavatmal, Maharashtra, India </li>
             </ul>
           </div>
         </div>
@@ -41,7 +41,7 @@ const Footer = () => {
         <div className="row align-items-center">
           <div className="col-md-6 text-center text-md-start">
             <p className="mb-0 ">
-              &copy; {new Date().getFullYear()} Auction Platform. All rights reserved.
+              &copy; {new Date().getFullYear()} BidBridge Auction Platform. All rights reserved.
             </p>
           </div>
 
@@ -50,22 +50,22 @@ const Footer = () => {
           <div className="col-md-6 text-center text-md-end text-white ">
             <ul className="list-inline mb-0 text-white ">
               <li className="list-inline-item text-white">
-                <a href="#!" className=" text-white">
+                <a href="https://www.facebook.com/ajinkya.chirde" className=" text-white">
                   <i className="fab fa-facebook-f"></i>
                 </a>
               </li>
               <li className="list-inline-item ms-3">
-                <a href="#!" className=" text-white">
+                <a href="https://x.com/ajinkya_chirde7" className=" text-white">
                   <i className="fab fa-twitter"></i>
                 </a>
               </li>
               <li className="list-inline-item ms-3">
-                <a href="#!" className="text-white">
+                <a href="https://www.instagram.com/ajinkya_chirde/" className="text-white">
                   <i className="fab fa-instagram"></i>
                 </a>
               </li>
               <li className="list-inline-item ms-3">
-                <a href="#!" className=" text-white">
+                <a href="https://www.linkedin.com/in/ajinkya-chirde/" className=" text-white">
                   <i className="fab fa-linkedin-in"></i>
                 </a>
               </li>
