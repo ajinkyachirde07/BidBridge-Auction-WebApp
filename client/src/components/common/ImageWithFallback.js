@@ -29,16 +29,16 @@ const ImageWithFallback = ({ src, fallbackSrc, alt, ...props }) => {
     
     // If it starts with 'uploads/' or '/uploads/', prepend server URL
     if (url.startsWith('uploads/') || url.startsWith('/uploads/')) {
-      return `http://https://bidbridge-auction-webapp.onrender.com/${url.startsWith('/') ? url.substring(1) : url}`;
+      return `https://bidbridge-auction-webapp.onrender.com/${url.startsWith('/') ? url.substring(1) : url}`;
     }
     
     // If it's a relative URL, make sure it's correct
     if (url.startsWith('/')) {
-      return `http://https://bidbridge-auction-webapp.onrender.com${url}`;
+      return `https://bidbridge-auction-webapp.onrender.com${url}`;
     }
     
     // Otherwise, assume it's relative to server
-    return `http://https://bidbridge-auction-webapp.onrender.com/${url}`;
+    return `https://bidbridge-auction-webapp.onrender.com/${url}`;
   };
 
   return (

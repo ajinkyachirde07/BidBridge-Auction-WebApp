@@ -9,7 +9,7 @@ const Home = () => {
   useEffect(() => {
     const fetchFeaturedAuctions = async () => {
       try {
-        const res = await axios.get('http://https://bidbridge-auction-webapp.onrender.com/api/auctions/active');
+        const res = await axios.get('https://bidbridge-auction-webapp.onrender.com/api/auctions/active');
         setFeaturedAuctions(res.data.slice(0, 4)); // Get first 4 active auctions
         setLoading(false);
       } catch (err) {
@@ -71,7 +71,7 @@ const Home = () => {
                     src={auction.product.images && auction.product.images.length > 0
                       ? auction.product.images[0].startsWith('http')
                         ? auction.product.images[0]
-                        : `http://https://bidbridge-auction-webapp.onrender.com${auction.product.images[0]}`
+                        : `https://bidbridge-auction-webapp.onrender.com${auction.product.images[0]}`
                       : `https://placehold.co/300x200?text=${auction.product.name}`}
                     className="card-img-top"
                     alt={auction.product.name}

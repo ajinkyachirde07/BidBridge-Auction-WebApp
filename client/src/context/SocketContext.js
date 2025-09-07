@@ -12,7 +12,7 @@ export const SocketProvider = ({ children }) => {
     console.log('Initializing Socket.io connection');
     
     // Create socket instance
-    const socketInstance = io('http://https://bidbridge-auction-webapp.onrender.com', {
+    const socketInstance = io('https://bidbridge-auction-webapp.onrender.com', {
       reconnectionAttempts: 5,
       reconnectionDelay: 1000,
       autoConnect: true,

@@ -71,7 +71,7 @@ const CreateProduct = ({ showAlert }) => {
         formData.append('images', file);
       });
 
-      const response = await axios.post('http://https://bidbridge-auction-webapp.onrender.com/api/uploads', formData, {
+      const response = await axios.post('https://bidbridge-auction-webapp.onrender.com/api/uploads', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           'x-auth-token': localStorage.getItem('token')
@@ -114,7 +114,7 @@ const CreateProduct = ({ showAlert }) => {
       }
       
       // Create product
-      const res = await axios.post('http://https://bidbridge-auction-webapp.onrender.com/api/products', {
+      const res = await axios.post('https://bidbridge-auction-webapp.onrender.com/api/products', {
         name,
         description,
         category,

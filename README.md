@@ -63,7 +63,7 @@ npm run dev
 ```
 
 This will start:
-- Backend server on http://https://bidbridge-auction-webapp.onrender.com
+- Backend server on https://bidbridge-auction-webapp.onrender.com
 - Frontend development server on http://localhost:3000
 
 ### Production Mode

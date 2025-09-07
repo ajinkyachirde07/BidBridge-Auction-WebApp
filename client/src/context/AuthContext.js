@@ -21,7 +21,7 @@ export const AuthProvider = ({ children }) => {
     const loadUser = async () => {
       if (token) {
         try {
-          const res = await axios.get('http://https://bidbridge-auction-webapp.onrender.com/api/users/profile');
+          const res = await axios.get('https://bidbridge-auction-webapp.onrender.com/api/users/profile');
           setUser(res.data);
           setIsAuthenticated(true);
         } catch (err) {
@@ -41,7 +41,7 @@ export const AuthProvider = ({ children }) => {
   // Register user
   const register = async (formData) => {
     try {
-      const res = await axios.post('http://https://bidbridge-auction-webapp.onrender.com/api/users/register', formData);
+      const res = await axios.post('https://bidbridge-auction-webapp.onrender.com/api/users/register', formData);
       
       localStorage.setItem('token', res.data.token);
       setToken(res.data.token);
@@ -60,7 +60,7 @@ export const AuthProvider = ({ children }) => {
   // Login user
   const login = async (email, password) => {
     try {
-      const res = await axios.post('http://https://bidbridge-auction-webapp.onrender.com/api/users/login', { email, password });
+      const res = await axios.post('https://bidbridge-auction-webapp.onrender.com/api/users/login', { email, password });
       
       localStorage.setItem('token', res.data.token);
       setToken(res.data.token);
@@ -87,7 +87,7 @@ export const AuthProvider = ({ children }) => {
   // Update user profile
   const updateProfile = async (formData) => {
     try {
-      const res = await axios.put('http://https://bidbridge-auction-webapp.onrender.com/api/users/profile', formData);
+      const res = await axios.put('https://bidbridge-auction-webapp.onrender.com/api/users/profile', formData);
       setUser(res.data);
       return { success: true };
     } catch (err) {
@@ -101,7 +101,7 @@ export const AuthProvider = ({ children }) => {
   // Change password
   const changePassword = async (currentPassword, newPassword) => {
     try {
-      await axios.put('http://https://bidbridge-auction-webapp.onrender.com/api/users/password', { currentPassword, newPassword });
+      await axios.put('https://bidbridge-auction-webapp.onrender.com/api/users/password', { currentPassword, newPassword });
       return { success: true };
     } catch (err) {
       return { 

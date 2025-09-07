@@ -17,11 +17,11 @@ const ProductDetail = ({ showAlert }) => {
         setLoading(true);
         
         // Fetch product details
-        const productRes = await axios.get(`http://https://bidbridge-auction-webapp.onrender.com/api/products/${id}`);
+        const productRes = await axios.get(`https://bidbridge-auction-webapp.onrender.com/api/products/${id}`);
         setProduct(productRes.data);
         
         // Fetch active auctions for this product
-        const auctionsRes = await axios.get(`http://https://bidbridge-auction-webapp.onrender.com/api/auctions?product=${id}&status=active`);
+        const auctionsRes = await axios.get(`https://bidbridge-auction-webapp.onrender.com/api/auctions?product=${id}&status=active`);
         
         if (auctionsRes.data.auctions) {
           setActiveAuctions(auctionsRes.data.auctions);
@@ -87,7 +87,7 @@ const ProductDetail = ({ showAlert }) => {
                     src={product.images && product.images.length > 0
                       ? product.images[0].startsWith('http')
                         ? product.images[0]
-                        : `http://https://bidbridge-auction-webapp.onrender.com${product.images[0]}`
+                        : `https://bidbridge-auction-webapp.onrender.com${product.images[0]}`
                       : `https://placehold.co/400x300?text=${product.name}`}
                     alt={product.name}
                     className="img-fluid rounded"
@@ -100,7 +100,7 @@ const ProductDetail = ({ showAlert }) => {
                           <img
                             src={image.startsWith('http')
                               ? image
-                              : `http://https://bidbridge-auction-webapp.onrender.com${image}`}
+                              : `https://bidbridge-auction-webapp.onrender.com${image}`}
                             alt={`${product.name} ${index + 2}`}
                             className="img-thumbnail"
                           />
