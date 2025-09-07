@@ -1,0 +1,6 @@
+server/node_modules
+dist
+.env                
+/node_modules
+/.pnp
+.pnp.js
